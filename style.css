@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@400;600 & family= League+Spartan:wght@100 & family= Roboto:ital,wght@0,100; 1.100 & display=trocar');
+
+/*regra geral*/
+body{ 
+    Color:  black; /* cor das fontes*/
+    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.resultado { display: none;}
+img {display: none;
+    max-width: 360px ;}
+
+    .subtitulo { color: #007451;}
+
+/* impede que o quiz fique largo */ 
+.quiz { width: 100%;
+     max-width: 360px ;
+    margin: 0 auto;
+}
+
+/*impede enventos de clique repetidos */ 
+.quiz.inactive { pointer-events: none;}
+
+/*estilizando o título */
+.titulo { font-size: 24px;}
+
+ /*esconde o item pra mostrar depois*/   
+ .resposta{ display: none;} 
+
+/* remove o espaçamento padão da lista*/
+ol{ padding: 0;} 
+ 
+/*estilizando a lista*/
+
+li {
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    background: #913835;
+    margin-bottom: 8px; 
+    /*margem entre elas a apple e google recomendam uma grid de 8px */ 
+    height: 48px;
+    list-style-type: none; /* método para anular a configuração original que mostrava os números na lista ordenada*/
+    font-size: 20px;
+    color: white;
+}
+
+/*muda cor de fundo quando ta com a mão em cima e coloca a mãozinha do mouse*/  
+li:hover {
+     background: #9C5451;  /*celular não tem hover pq?*/
+     cursor: pointer; /*mãozinha pra clicar*/ 
+}
+
+/*muda a cor quando clicar ( o padrão é errado) */ 
+li.clicked { background: red;
+    color:white
+} /* não entendi direito pq */
+
+/*muda a cor quando clicado no elemento de classe correta*/
+li.clicked.correct { background: #007451; }
+
+/* aplica negrito no texto de resultado*/
+.resultado { font-weight: bold;
+   }
+  
+
+
+   
